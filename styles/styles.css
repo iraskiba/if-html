@@ -7,7 +7,7 @@ body {
     box-sizing: border-box ;
 }
 
-.common {
+.section {
     box-sizing: border-box;
     max-width: 100%;
     height:569px ;
@@ -20,9 +20,10 @@ body {
     margin: 20px 670px 88px 670px;
     align-items: center;
     background-color: #f5bd41;
+    border: none;
 }
 
-.offer {
+.section_title {
     width:306px ;
     height: 47px;
     padding: 0 16px;
