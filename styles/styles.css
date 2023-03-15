@@ -1,15 +1,18 @@
-body{
+body {
     background-color: #fafafa;
 }
-* { margin: 0;
+
+* {
+    margin: 0;
     box-sizing: border-box ;
 }
-.common{
-    box-sizing: border-box;
-    width: 1440px;
-    height:569px ;
 
+.common {
+    box-sizing: border-box;
+    max-width: 100%;
+    height:569px ;
 }
+
 .line {
     box-sizing: border-box;
     width: 100px;
@@ -18,6 +21,7 @@ body{
     align-items: center;
     background-color: #f5bd41;
 }
+
 .offer {
     width:306px ;
     height: 47px;
@@ -26,26 +30,25 @@ body{
     color: #383838;
    text-align: center;
     margin: 120px 567px 20px 567px;
-
 }
-.icons {
+
+.img_card_container {
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
-
+    padding: 120px;
 }
+
 .img_icon {
     padding: 6px 105px 0 103px ;
     margin-bottom: 58px;
-
 }
-.icon{
+
+.img_card {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding-bottom: 120px;
+    /*padding-bottom: 120px;*/
     align-items: center;
+}
 
-    }
-
-.
