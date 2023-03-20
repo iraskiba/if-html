@@ -45,7 +45,6 @@ body {
     display: flex;
     justify-content: center;
 
-
 }
 
 .img_icon {
@@ -71,14 +70,19 @@ body {
 }
 
 .footer{
+    align-items: center;
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: 1440px;
     height: 625px;
     background-color: #10367C;
+}
+
+.footer-container{
+    box-sizing: border-box;
     display: flex;
-    gap:24px 104px;
-    justify-content:space-around ;
+    justify-content:space-between;
     color: #ffffff;
+    margin: 120px 272px 64px 104px;
 }
 
 .subtitle{
@@ -99,4 +103,19 @@ display: flex;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
+}
+
+.property{
+    text-align: start;
+    margin-right: 283px;
+    margin-left: 223px;
+}
+
+.copyright{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    margin: 0 1082px 120px 105px;
 }
