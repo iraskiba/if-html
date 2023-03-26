@@ -17,11 +17,12 @@ body {
 
 .top-section {
   height: 100vh;
-  width: 1440px;
+  max-width: 1440px;
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  padding: 51px 104px 0;
 }
 
 .navigate-link{
@@ -30,16 +31,14 @@ body {
   color: #ffffff;
   box-sizing: border-box;
   height: 46px;
-  margin-left: 104px;
-  padding-top: 51px;
-  margin-bottom: 202px;
+  padding-bottom: 202px;
   column-gap: 24px;
 }
 
 
 .stays-atractions-container {
   display: flex;
-  width: 201px;
+  max-width: 201px;
   gap: 24px;
   margin-right: 24px;
 
@@ -66,17 +65,18 @@ a{
 .night-img-style{
   width: 30px;
   height: 30px;
-  margin-right: 24px;
+
 }
 
 .account-img-style{
   width: 40px;
   height:40px;
-  margin-right: 104px;
+
 }
 .night-account{
   display: flex;
   justify-items: center;
+  gap: 24px;
 }
 
 .stays {
@@ -93,7 +93,7 @@ a{
   font-weight: 400;
   height: 28px;
   width: 118px;
-  margin-right: 48px;
+  padding-right: 48px;
 }
 
 .headline{
@@ -105,23 +105,27 @@ a{
   font-size: 50px;
   line-height: 59px;
   color: #ffffff;
-  margin: 0 794px 100px 104px;
+  margin-bottom: 100px;
 
 }
 
 .before-form {
+  box-sizing: content-box;
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   display: flex;
-  justify-content:start;
+ justify-content: start;
+gap: 221px;
+
+
 }
 
 .form-destination {
+  box-sizing: border-box;
   height: 21px;
   width: 246px;
-  margin: 0px 221px 24px 128px;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -129,21 +133,30 @@ a{
 
 .form-check{
   height: 21px;
-  width: 173px;
-  margin: 0px 672px 24px 0px;
+  max-width: 173px;
+
 }
 
 .section-form{
   display: flex;
   justify-content: space-between;
   border: solid 3px #F3F3F4;
-  width:1223px ;
+  max-width:1223px ;
   height: 64px;
   background-color: #FFFFFF;
-  margin: 0px 104px 120px 104px ;
   border-radius: 8px;
   align-items: center;
   align-content: center;
+  margin-top: 24px;
+
+}
+.city{
+  border: none;
+text-align: start;
+  position: absolute;
+}
+.form-date {
+  border: none;
 }
 
 .form-date{
@@ -186,6 +199,7 @@ a{
 
 .download{
   display: flex;
-  margin-left: 595px;
+  justify-content: center;
+  padding-top: 120px;
 
 }
