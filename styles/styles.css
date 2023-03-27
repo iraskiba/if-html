@@ -101,15 +101,16 @@ a{
   list-style-type: none;
   max-width:542px ;
   height:118px ;
+  margin-bottom: 100px;
+
+}
+.headline__text {
   font-weight: 500;
   font-size: 50px;
   line-height: 59px;
   color: #ffffff;
-  margin-bottom: 100px;
-
 }
-
-.before-form {
+.before__forms {
   box-sizing: content-box;
   color: #ffffff;
   font-size: 18px;
@@ -119,10 +120,9 @@ a{
  justify-content: start;
 gap: 221px;
 
-
 }
 
-.form-destination {
+.before-form-destination {
   box-sizing: border-box;
   height: 21px;
   width: 246px;
@@ -131,13 +131,13 @@ gap: 221px;
   line-height: 21px;
 }
 
-.form-check{
+.before-form-check{
   height: 21px;
   max-width: 173px;
 
 }
 
-.section-form{
+.form__section{
   display: flex;
   justify-content: space-between;
   border: solid 3px #F3F3F4;
@@ -150,16 +150,13 @@ gap: 221px;
   margin-top: 24px;
 
 }
-.city{
+.city__form{
   border: none;
 text-align: start;
   position: absolute;
 }
-.form-date {
-  border: none;
-}
 
-.form-date{
+.date__form{
   text-align: center;
   width:259px ;
   height: 64px;
@@ -169,11 +166,11 @@ text-align: start;
   border-radius: 8px;
 }
 
-.number-people{
+.number-people__form{
   text-align: center;
 }
 
-.button-search {
+.button__form {
   box-sizing: border-box;
   border: none;
   color: #FFFFFF;
@@ -186,20 +183,19 @@ text-align: start;
   width: 197px;
   height: 64px;
 }
+.download__section{
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+}
 
-.logo-img-google{
+.download__img__google{
   width: 135px;
   height:40px ;
 }
 
-.logo-img-appstore{
+.download__img__appstore{
   width:118px ;
   height:39px ;
 }
 
-.download{
-  display: flex;
-  justify-content: center;
-  padding-top: 120px;
-
-}
