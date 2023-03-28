@@ -31,8 +31,9 @@ body {
   color: #ffffff;
   box-sizing: border-box;
   height: 46px;
-  padding-bottom: 202px;
+  padding-bottom: 6px;
   column-gap: 24px;
+
 }
 
 
@@ -41,7 +42,6 @@ body {
   max-width: 201px;
   gap: 24px;
   margin-right: 24px;
-
 }
 
 a{
@@ -199,3 +199,14 @@ text-align: start;
   height:39px ;
 }
 
+.line {
+  box-sizing: border-box;
+  max-width:50px;
+  height: 4px;
+margin-bottom: 196px;
+  align-items: center;
+  background-color: #f5bd41;
+  border: none;
+ 
+
+}
