@@ -16,13 +16,16 @@ body {
 }
 
 .top-section {
-  height: 100vh;
+  min-height: 100vh;
   max-width: 1440px;
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   padding: 51px 104px 0;
+
+
+
 }
 
 .navigate-link{
@@ -35,7 +38,10 @@ body {
   column-gap: 24px;
 
 }
-
+.links_container{
+  display: flex;
+  justify-content: space-around;
+}
 
 .stays-atractions-container {
   display: flex;
@@ -95,6 +101,19 @@ a{
   width: 118px;
   padding-right: 48px;
 }
+.line {
+  box-sizing: border-box;
+  max-width:50px;
+  height: 4px;
+  margin-bottom: 196px;
+  align-items: center;
+  background-color: #f5bd41;
+  border: none;
+
+
+
+
+}
 
 .headline{
   box-sizing: border-box;
@@ -109,31 +128,26 @@ a{
   font-size: 50px;
   line-height: 59px;
   color: #ffffff;
+
 }
-.before__forms {
-  box-sizing: content-box;
+.city__label{
+  display: block;
+  margin-bottom: 46px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
   color: #ffffff;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  display: flex;
- justify-content: start;
-gap: 221px;
+  position:relative ;
+  bottom: 24px;
 
 }
+.city__form{
+  display: block;
+  border: none;
+  position: relative;
+  bottom: 27px;
+  text-align: start;
 
-.before-form-destination {
-  box-sizing: border-box;
-  height: 21px;
-  width: 246px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-}
-
-.before-form-check{
-  height: 21px;
-  max-width: 173px;
 
 }
 
@@ -147,25 +161,36 @@ gap: 221px;
   border-radius: 8px;
   align-items: center;
   align-content: center;
-  margin-top: 24px;
+  margin-bottom:120px ;
 
-}
-.city__form{
-  border: none;
-text-align: start;
-  position: absolute;
 }
 
 .date__form{
+  display: block;
   text-align: center;
   width:259px ;
   height: 64px;
-  align-items: center;
+
   padding: 23px 24px 23px 24px;
   border: 3px solid #F5BD41;
   border-radius: 8px;
-}
+  position: relative;
+  bottom: 24px;
 
+}
+.date__label{
+  color: #ffffff;
+  position: relative;
+  bottom: 10px;
+  padding-bottom: 24px;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+
+
+
+}
 .number-people__form{
   text-align: center;
 }
@@ -182,15 +207,24 @@ text-align: start;
   border-radius: 8px;
   width: 197px;
   height: 64px;
+  position: relative;
+  left: 3px;
 }
 .download__section{
+  width:271px ;
+  height: 40px;
   display: flex;
-  justify-content: center;
-  padding-top: 120px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right:auto ;
+  margin-left:auto ;
+
+
+
 }
 
 .download__img__google{
-  width: 135px;
+  max-width: 135px;
   height:40px ;
 }
 
@@ -199,14 +233,3 @@ text-align: start;
   height:39px ;
 }
 
-.line {
-  box-sizing: border-box;
-  max-width:50px;
-  height: 4px;
-margin-bottom: 196px;
-  align-items: center;
-  background-color: #f5bd41;
-  border: none;
- 
-
-}
