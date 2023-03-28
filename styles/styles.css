@@ -9,6 +9,7 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
 .svg_sprite{
   display: none;
   width: 0;
@@ -24,8 +25,6 @@ body {
   background-size: cover;
   padding: 51px 104px 0;
 
-
-
 }
 
 .navigate-link{
@@ -36,8 +35,8 @@ body {
   height: 46px;
   padding-bottom: 6px;
   column-gap: 24px;
-
 }
+
 .links_container{
   display: flex;
   justify-content: space-around;
@@ -71,14 +70,13 @@ a{
 .night-img-style{
   width: 30px;
   height: 30px;
-
 }
 
 .account-img-style{
   width: 40px;
   height:40px;
-
 }
+
 .night-account{
   display: flex;
   justify-items: center;
@@ -91,8 +89,9 @@ a{
   font-size: 24px;
   line-height: 28px;
   font-weight: 400;
-}
+  border-bottom: 4px solid #F5BD41;
 
+}
 .attractions {
   font-size: 24px;
   line-height: 28px;
@@ -101,6 +100,7 @@ a{
   width: 118px;
   padding-right: 48px;
 }
+
 .line {
   box-sizing: border-box;
   max-width:50px;
@@ -109,10 +109,6 @@ a{
   align-items: center;
   background-color: #f5bd41;
   border: none;
-
-
-
-
 }
 
 .headline{
@@ -121,15 +117,15 @@ a{
   max-width:542px ;
   height:118px ;
   margin-bottom: 100px;
-
 }
+
 .headline__text {
   font-weight: 500;
   font-size: 50px;
   line-height: 59px;
   color: #ffffff;
-
 }
+
 .city__label{
   display: block;
   margin-bottom: 46px;
@@ -139,16 +135,14 @@ a{
   color: #ffffff;
   position:relative ;
   bottom: 24px;
-
 }
+
 .city__form{
   display: block;
   border: none;
   position: relative;
   bottom: 27px;
   text-align: start;
-
-
 }
 
 .form__section{
@@ -162,7 +156,6 @@ a{
   align-items: center;
   align-content: center;
   margin-bottom:120px ;
-
 }
 
 .date__form{
@@ -170,14 +163,13 @@ a{
   text-align: center;
   width:259px ;
   height: 64px;
-
   padding: 23px 24px 23px 24px;
   border: 3px solid #F5BD41;
   border-radius: 8px;
   position: relative;
   bottom: 24px;
-
 }
+
 .date__label{
   color: #ffffff;
   position: relative;
@@ -187,10 +179,8 @@ a{
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-
-
-
 }
+
 .number-people__form{
   text-align: center;
 }
@@ -210,6 +200,7 @@ a{
   position: relative;
   left: 3px;
 }
+
 .download__section{
   width:271px ;
   height: 40px;
@@ -218,9 +209,6 @@ a{
   justify-content: space-between;
   margin-right:auto ;
   margin-left:auto ;
-
-
-
 }
 
 .download__img__google{
