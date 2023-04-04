@@ -23,7 +23,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 51px 104px 0;
+  padding: 51px 104px 120px;
 }
 
 .top-section__navigate-link{
@@ -334,7 +334,7 @@ a{
   padding: 120px 272px 64px 104px;
 }
 
-.subtitle{
+.footer__column__subtitle{
   box-sizing: content-box;
   font-weight: 500;
   font-size: 20px;
@@ -343,7 +343,7 @@ a{
   margin-bottom: 24px;
 }
 
-.desc__subtitle{
+.footer__column__subtitle--desc{
   display: flex;
   flex-direction: column;
   row-gap:24px;
@@ -357,7 +357,7 @@ a{
   text-align: start;
 }
 
-.copyright__text {
+.footer__copyright-text {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
