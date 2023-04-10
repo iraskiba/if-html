@@ -275,7 +275,7 @@ a {
   bottom: -3px;
 }
 
-.form-section__downloads {
+.download__section {
   max-width: 271px;
   height: 40px;
   display: flex;
@@ -285,12 +285,12 @@ a {
   margin-left: auto;
 }
 
-.download__google-svg {
+.download__svg--google {
   max-width: 135px;
   height: 40px;
 }
 
-.download__appstore-svg {
+.download__svg--appstore {
   width: 118px;
   height: 39px;
 }
@@ -302,13 +302,13 @@ a {
   margin: 0 auto;
 }
 
-.section-main {
+.section-offer {
   box-sizing: border-box;
   max-width: 1440px;
   min-height: 569px;
 }
 
-.section-main__title {
+.section-offer__title {
   font-weight: 500;
   font-size: 40px;
   width: 306px;
@@ -337,22 +337,22 @@ a {
   flex-wrap: wrap;
 }
 
-.headset__element__headset-img {
+.img__card__headset-svg {
   width: 100px;
  aspect-ratio: 1/1;
 }
 
-.chat__element__chat-img {
+.img__card__chat-svg {
   width: 100px;
   aspect-ratio: 1/1;
 }
 
-.device__element__device-img {
+.img__card__device-svg {
   width: 100px;
   aspect-ratio: 1/1;
 }
 
-.like__element__like-img {
+.img__card__like-svg {
   width: 100px;
   aspect-ratio: 1/1;
 }
@@ -388,26 +388,23 @@ a {
   padding: 120px 272px 64px 104px;
 }
 
-.logo-footer{
+.logo-footer__hidden{
   display: none;
 }
 
 .footer__column__subtitle {
   box-sizing: content-box;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;
   text-align: left;
   margin-bottom: 24px;
 }
 
-.subtitle-links__text{
+.footer__column__subtitle--text{
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
 }
 
-.subtitle-links{
+.footer__column__subtitle-links--hidden{
   pointer-events: none;
 }
 
@@ -444,7 +441,7 @@ a {
     display: none;
   }
 
-  .logo-footer{
+  .logo-footer__hidden{
     display: block;
     width:98px ;
     height:19px ;
@@ -486,23 +483,23 @@ a {
     white-space: nowrap;
   }
 
-  .subtitle-links{
+  .footer__column__subtitle-links--hidden{
     text-decoration: underline;
     pointer-events: auto;
   }
 
-  .subtitle-links__text {
+  .footer__column__subtitle--text {
   font-size: 15px;
   font-weight: 500;
   line-height: 18px;
 }
 
-  .section-main{
+  .section-offer{
     padding-right: 73px;
     padding-left: 73px;
   }
 
-  .section-main__title {
+  .section-offer__title {
     max-width: 214px;
     text-align: center;
     margin: 24px auto 32px;
@@ -525,22 +522,22 @@ a {
     margin-bottom: 32px;
   }
 
-  .headset__element__headset-img {
+  .img__card__headset-svg {
     width: 70px;
     height: 70px;
   }
 
-  .chat__element__chat-img {
+  .img__card__chat-svg {
     width: 70px;
     height: 70px;
   }
 
-  .device__element__device-img {
+  .img__card__device-svg {
     width: 70px;
     height: 70px;
   }
 
-  .like__element__like-img {
+  .img__card__like-svg {
     width: 70px;
     height: 70px;
   }
@@ -698,11 +695,12 @@ a {
   .footer-container{
     box-sizing: border-box;
     min-width:225px ;
-    margin: 0 auto;
-    padding: 40px 68px 0;
+    padding:40px 0 0 0 ;
+    text-align: center;
+    justify-content: space-evenly;
   }
 
-  .logo-footer{
+  .logo-footer__hidden{
     display: block;
     width:98px ;
     height:19px ;
