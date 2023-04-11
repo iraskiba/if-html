@@ -685,6 +685,7 @@ a {
     font-weight: 400;
     line-height: 14px;
     text-align: center;
+    margin: 0 auto;
   }
 
   .footer {
@@ -713,14 +714,6 @@ a {
 
   ._property{
     white-space: nowrap;
-  }
-
-  .footer__copyright-text {
-    display: block;
-    margin: 0 auto;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
   }
   }
 
