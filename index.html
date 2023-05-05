@@ -3,8 +3,8 @@
       xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="about HTML and CSS" />
-    <meta name="keywords" content="HTML,CSS,forms" />
+    <meta name="description" content="about hotel booking" />
+    <meta name="keywords" content="booking,triphous,guest" />
     <meta name="author" content="Irina Skiba" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Title</title>
@@ -203,106 +203,107 @@
     </symbol>
   </svg>
 
-<div class="top-section top-section__bg ">
+<section class="top-section top-section__bg ">
   <div class="wrapper">
 
-<nav class="top-section__navigate-link">
-  <nav class="top-section__logo-block lg-3-col">
-          <a href=# class="top-section__logo-triphous">
-            <svg class="top-section__logo-triphous&#45;&#45;logo-svg">
-             <use href="#logo" ></use>
-           </svg>
-             </a>
-          </nav>
+ <nav class="top-section__navigate-link">
 
-          <nav class="top-section__links-block lg-4-col">
-            <nav class="top-section__stays-atractions-block">
-            <nav class="top-section__stays-atractions-block--line-stays">
-             <a href="#" class="top-section__stays-atractions-block&#45;&#45;stays"><p><span class="line_orange">Stays</span></p></a></nav>
-            <a href="#" class="top-section__stays-atractions-block--attractions"><p><span class="line_orange_attraction">Attractions</span></p></a>
-          </nav>
+  <nav class="top-section__navigate-link__logo-block lg-3-col">
+    <a href=# class="top-section__logo">
+      <svg class="top-section__logo--svg">
+        <use href="#logo" ></use>
+      </svg>
+    </a>
+  </nav>
 
-            <nav class="top-section__night-account-block">
-         <a href="#" class="night">
-        <svg class="night__img-svg">
+  <nav class="top-section__navigate-link__links-block lg-4-col">
+    <nav class="links-block__stays-atractions">
+      <nav class="links-block__stays-atractions--stays-line">
+        <a href="#" class="links-block__stays-atractions--stays-text"><p><span class="line_orange">Stays</span></p></a></nav>
+        <a href="#" class="links-block__stays-atractions--attractions-text"><p><span class="line_orange_attraction">Attractions</span></p></a>
+    </nav>
+
+    <nav class="top-section__navigate-link--night-account">
+      <a href="#">
+        <svg class="night__svg stroke">
           <use href="#night"></use>
         </svg>
-        </a>
+      </a>
 
-        <a href="#" class="account">
-        <svg class="account__img-svg">
+      <a href="#">
+        <svg class="account__svg atroke">
           <use href="#account"></use>
         </svg>
-        </a>
-        </nav>
-          </nav>
+      </a>
+    </nav>
+  </nav>
 
-<nav class="top-section__links-block__menu--hidden">
+<nav class="top-section__links-block__menu">
   <a href="#" class="menu">
-    <svg class="menu__img-svg--hidden">
+    <svg class="menu__svg">
       <use href="#menu"></use>
     </svg>
   </a>
 </nav>
-      </nav>
+</nav>
 
-    <section class="headline lg-6-col">
-        <h1 class="headline__text">Discover stays to&nbsp;live,&nbsp;work or just relax</h1>
-    </section>
+    <div class="headline__top-section lg-6-col">
+      <h1 class="headline">Discover stays to&nbsp;live,&nbsp;work or just relax</h1>
+    </div>
 
-
-  <section class="top-section__form--hidden sm-6-col">
-    <div class="form__city--hidden">
-    <form>
-      <div class="form__city__loupe--svg">
-        <svg class="svg-loupe">
+  <div class="top-section__form--hidden sm-6-col">
+    <div class="form__city form__city--hidden">
+      <form>
+      <div class="form__city form__city__loupe--svg">
+        <svg class="form__city svg-loupe">
         <use href="#loupe" ></use>
-      </svg>
-        <input class="form__city__hidden--input" type="text" id="city-hidden"
+        </svg>
+        <input class="form__city form__city__hidden--input" type="text" id="city-hidden"
                value="Your destination or hotel">
       </div>
-    </form>
-  </div>
+    </div>
 
     <div class="form__date-in--hidden">
-      <form>
-        <label class="form__date-in__label" for="date-hidden">Check-in</label>
-        <input class="form__date-in__input" type="text" id="date-hidden" value="Tue 15 Sept 20">
-      </form>
+        <div>
+        <label class="form__date-in form__date-in__label" for="date-hidden">Check-in</label>
+        <input class="form__date-in form__date-in__input" type="text" id="date-hidden" value="Tue 15 Sept 20">
+        </div>
     </div>
 
       <div class="form__date-out--hidden">
-      <form>
-        <label class="form__date-out__label" for="date-hidden-out">Check-out</label>
-        <input class="form__date-out__input" type="text" id="date-hidden-out" value="Sat 19 Sept 20">
-      </form>
-    </div>
+        <div>
+        <label class="form__date-out form__date-out__label" for="date-hidden-out">Check-out</label>
+        <input class="form__date-out form__date-out__input" type="text" id="date-hidden-out" value="Sat 19 Sept 20">
+        </div>
+      </div>
 
     <div class="form-hidden__adults">
-      <form>
-        <label class="form-hidden__adults__label" for="adults">Adults</label>
-      <input class="form-hidden__adults__input" type="text" id="adults" value="2">
-      </form>
+      <div>
+        <label class="form__adults form__adults__label" for="adults">Adults</label>
+        <input class="form__adults form__adults__input" type="text" id="adults" value="2">
+      </div>
     </div>
 
     <div class="form-hidden__children">
-   <form>
-  <label class="form-hidden__children__label" for="children">Children</label>
-      <input class="form-hidden__children__input" type="text" id="children" value="0">
-   </form>
+      <div>
+        <label class="form__children form__children__label" for="children">Children</label>
+        <input class="form__children form__children__input" type="text" id="children" value="0">
+      </div>
     </div>
 
     <div class="form-hidden__rooms">
-      <label class="form-hidden__rooms__label" for="rooms">Rooms</label>
-      <input class="form-hidden__rooms__input" type="text" id="rooms" value="1">
+      <label class="form__rooms form__rooms__label" for="rooms">Rooms</label>
+      <input class="form__rooms form__rooms__input" type="text" id="rooms" value="1">
   </div>
+</form>
 
     <div class="form-hidden__button">
       <button class="button">Search</button>
     </div>
-  </section>
+  </div>
 
-    <section class="form-section lg-12-col">
+
+    <div class="form-section lg-12-col">
 
       <form>
         <div class="form-section__city-element">
@@ -311,19 +312,19 @@
         </div>
 
        <div class="form-section__date-element">
-           <label class="form-section__date-element--date__label" for="date">Check-in — Check-out</label>
-           <input class="form-section__date-element--date__form" type="text" id="date" value="Tue 15 Sept - Sat 19 Sept" >
+         <label class="form-section__date-element--date__label" for="date">Check-in — Check-out</label>
+         <input class="form-section__date-element--date__form" type="text" id="date" value="Tue 15 Sept - Sat 19 Sept" >
        </div>
 
       <div class="form-section__number-people"><p>2 Adults — 0 Children — 1 Room</p></div>
-<div>
-      <button class="button__element">Search</button>
-</div>
+     <div>
+      <button class="form-section__button-element">Search</button>
+     </div>
       </form>
-    </section>
+    </div>
 
       <footer class="download__section lg-1-col">
-          <div class="download__google-container" >
+          <div class=" download__google-container">
               <a href=# class="download__google-link">
                   <svg class="download__svg--google">
                       <use href="#google" ></use>
@@ -340,60 +341,54 @@
           </div>
       </footer>
       </div>
-    </div>
+    </section>
 </div>
 
 <div class="wrapper">
-<div class="section-offer">
+<section class="section-offer">
   <h2 class="col-4-lg section-offer__title">What do we offer</h2>
 
 
-  <section class="img__card__block">
+  <div class="section-offer__list">
 
     <div class="col-3-lg col-6-sm col-6-md">
-      <figure class="img__card">
+      <figure class="section-offer__list__item section-offer__list__item-first">
           <div>
-              <a href=#>
-                <svg class="img__card__headset-svg">
-                      <use href="#headset" ></use>
-                  </svg>
-              </a>
+            <svg class="section-offer__list__item--svg">
+              <use href="#headset" ></use>
+            </svg>
           </div>
           <figcaption class="text__after-img">Support 24/7</figcaption>
       </figure>
     </div>
 
     <div class="col-3-lg col-6-sm col-6-md">
-      <figure class="img__card">
+      <figure class="section-offer__list__item section-offer__list__item-second">
           <div>
-              <a href=#>
-                  <svg class="img__card__chat-svg">
-                      <use href="#chat" ></use>
-                  </svg>
-              </a>
+            <svg class="section-offer__list__item--svg">
+              <use href="#chat" ></use>
+            </svg>
           </div>
           <figcaption class="text__after-img">Communicate directly</figcaption>
       </figure>
     </div>
 
     <div class="col-3-lg col-6-sm col-6-md">
-      <figure class="img__card">
+      <figure class="section-offer__list__item section-offer__list__item-third">
           <div>
-              <a href=#>
-                  <svg class="img__card__device-svg">
-                      <use href="#device" ></use>
-                  </svg>
-              </a>
+            <svg class="section-offer__list__item--svg">
+              <use href="#device" ></use>
+            </svg>
           </div>
           <figcaption class="text__after-img">Book online</figcaption>
       </figure>
     </div>
 
     <div class="col-3-lg col-6-sm col-6-md">
-      <figure class="img__card">
+      <figure class="section-offer__list__item section-offer__list__item-firth">
           <div>
               <a href=#>
-                  <svg class="img__card__like-svg">
+                  <svg class="section-offer__list__item--svg">
                       <use href="#like" ></use>
                   </svg>
               </a>
@@ -401,97 +396,88 @@
           <figcaption class="text__after-img">Real guest reviews</figcaption>
       </figure>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 </div>
 
 
-  <div class="section-homes section-homes__bg">
+  <section class="section-homes section-homes__bg">
     <div class="wrapper">
 
-
       <header class="section-homes__title">
-        <h3 class="title homes__title">Homes guests loves</h3>
+        <h3 class="homes__title">Homes guests loves</h3>
       </header>
 
+      <div class="section-homes__items">
 
-      <section class="section-homes__items">
-
-        <figure class="guests-item__first">
-          <img src="images/hotel.jpg" alt="hotel" class="hotel__img"/>
+        <div class="guests-item__first">
+          <img src="images/hotel.jpg" alt="hotel leopold saint petersburg" class="section-homes__items__img"/>
           <p class="caption">Hotel Leopold<p>
           <p class="picture-description">Saint Petersburg, Russia</p>
-        </figure>
+        </div>
 
-
-        <figure class="guests-item__second">
-          <img src="images/apartment.jpg" alt="apartment" class="apartment__img"/>
+        <div class="guests-item__second">
+          <img src="images/apartment.jpg" alt="apartment sunshine spain" class="section-homes__items__img"/>
           <p class="caption">Apartment Sunshine </p>
           <p class="picture-description">Santa Cruz de Tenerife, Spain</p>
-        </figure>
+        </div>
 
-
-        <figure class="guests-item__third">
-          <img src="images/villa.jpg" alt="villa" class="villa__img"/>
+        <div class="guests-item__third">
+          <img src="images/villa.jpg" alt="villa kunerad slowakia" class="section-homes__items__img"/>
           <p class="caption">Villa Kunerad</p>
           <p class="picture-description">Vysokie Tatry, Slowakia</p>
-        </figure>
+        </div>
 
-
-
-        <figure class="guests-item__forth">
-          <img src="images/hostel.jpg" alt="hostel" class="hostel__img"/>
+        <div class="guests-item__forth">
+          <img src="images/hostel.jpg" alt="hostel friendship germany" class="section-homes__items__img"/>
           <p class="caption">Hostel Friendship</p>
           <p class="picture-description">Berlin, Germany</p>
-        </figure>
-      </section>
+        </div>
+      </div>
 
       <button class="circle section-homes__circle-position">
         <svg class="arrow__svg">
           <use href="#arrow" ></use>
         </svg>
       </button>
-
     </div>
-  </div>
-
+  </section>
 
   <div class="wrapper">
     <section class="section-destinations">
+
       <header class="section-destinations__title-block">
-        <h3 class="section-destinations__title--text">The best destinations</h3>
+        <h3 class="section-destinations__title">The best destinations</h3>
       </header>
 
-      <section class=" col-6-sm section-destinations__buttons">
+      <div class=" col-6-sm section-destinations__buttons">
+        <button class="section-destinations__button-regions">Regions</button>
+        <button class="section-destinations__button-cities">Cities</button>
+        <button class="section-destinations__button-places">Places <span class="hidden-button">of interest</span></button>
+      </div>
 
-        <button class="section-destinations__button-regions"><a class="link link__color-blue" href="#">Regions</a></button>
-
-        <button class="section-destinations__button-cities"><a class="link" href="#">Cities</a></button>
-        <button class="section-destinations__button-places"><a class="link" href="#">Places <span class="hidden-button">of interest</span></a></button>
-      </section>
-
-      <section class="section-destinations__items">
+      <div class="section-destinations__items">
         <figure class="section-destinations-items__first">
-          <img src="images/maldives.jpg" alt="maldives" class="img"/>
-          <p class="figcaption">Maldives<p>
+          <img src="images/maldives.jpg" alt="maldives" class="section-destinations__img"/>
+          <p class="section-destinations-items__figcaption">Maldives<p>
         </figure>
 
 
         <figure class="section-destinations-items__second">
-          <img src="images/spain.jpg" alt="spain" class="img"/>
-          <p class="figcaption">Spain<p>
+          <img src="images/spain.jpg" alt="spain" class="section-destinations__img"/>
+          <p class="section-destinations-items__figcaption">Spain<p>
         </figure>
 
 
         <figure class="section-destinations-items__third">
-          <img src="images/norway.jpg" alt="norway" class="img"/>
-          <p class="figcaption">Norway<p>
+          <img src="images/norway.jpg" alt="norway" class="section-destinations__img"/>
+          <p class="section-destinations-items__figcaption">Norway<p>
         </figure>
 
 
         <figure class="section-destinations-items__forth">
-          <img src="images/island.jpg" alt="island" class="img"/>
-          <p class="figcaption">Island<p>
+          <img src="images/island.jpg" alt="island" class="section-destinations__img"/>
+          <p class="section-destinations-items__figcaption">Island<p>
         </figure>
 
         <button class="circle section-destinations__circle-position">
@@ -501,7 +487,7 @@
         </button>
 
         <button class="section-destinations-items__submit">Book now</button>
-      </section>
+      </div>
 
     </section>
   </div>
@@ -709,19 +695,18 @@
 
 
 
-  <section class="footer footer__bg">
+  <footer class="footer footer__bg">
   <div class="wrapper">
   <svg class="logo-footer__hidden">
     <use href="#logo-footer" ></use>
   </svg>
 
-  <div class="footer-wrapper">
       <div class="footer-container">
       <div class="col-4-md col-1-sm">
           <div class="footer__column">
-            <header class="footer__column__subtitle">
+            <div class="footer__column__subtitle">
             <a href="#" class="footer__column__subtitle-links--hidden"><h3 class="footer__column__subtitle--text">About</h3></a>
-          </header>
+          </div>
               <section class="footer__column__subtitle--desc">
                   <p>How Triphouse works</p>
                   <p>Careers</p>
@@ -764,8 +749,8 @@
   <footer class="col-3-lg ">
     <h2 class="footer__copyright-text"> &copy; 2022Triphouse, Inc. All rights reserved</h2>
   </footer>
-  </div>
-  </section>
+
+  </footer>
 
 
   </body>
