@@ -546,7 +546,7 @@ a {
   height: auto;
 }
 
-.caption{
+.section-homes__hotel-name{
   color:#3077C6;
   margin-top: 24px;
   font-size: 24px;
@@ -554,7 +554,7 @@ a {
   line-height: 1.16;
 }
 
-.picture-description{
+.section-homes__hotel-location{
   color: #BFBFBF;
   font-size: 24px;
   font-weight: 400;
@@ -698,13 +698,292 @@ a {
   left:13%;
 }
 
+/* section-sign-up*/
+
+.section-sign-up{
+  max-width: 1232px;
+  background-color:#EAF0F9;
+  max-height: 200px;
+  margin: 0 104px;
+  position: relative;
+}
+.sign-up-hidden{
+  display: none;
+}
+
+.section-sign-up__items{
+  width: 100%;
+}
+
+.section-sign-up__text{
+  display: block;
+  margin-left: 134px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-top: 51px;
+}
+.section-sign-up__logo--hidden{
+  display: none;
+}
+
+.user__svg{
+  position: absolute;
+  width: 86px;
+  height: 86px;
+  top:30%;
+  left:2%;
+}
+
+.close__svg{
+  width: 26px;
+  height: 26px;
+}
+
+.instal-link{
+  display: none;
+}
+
+.section-sign-up__close{
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  top:13%;
+  left:96%;
+}
+
+.section-sign-up__close:focus{
+  outline: none;
+}
+
+.section-sign-up__submit{
+  color:#3077C6;
+  background-color: #ffffff;
+  border: 1px #3077C6 solid;
+  width: 128px;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.16;
+  position: absolute;
+  bottom:25%;
+  left:10.8%;
+  z-index: 2;
+}
+
+/* section-reviews*/
+
+.section-reviews{
+  max-height: 1161px;
+  padding-top: 120px;
+  max-width:1440px ;
+  position: relative;
+}
+
+.reviews__title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: #383838;
+  text-align: center;
+  padding-bottom: 8px;
+  margin-bottom: 104px;
+}
+
+.review__galery{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap:16px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.review__galery__img{
+  width:100% ;
+}
+
+.review__img{
+  max-width: 100%;
+  height: auto;
+}
+
+.text-on-picture{
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.16;
+  color:#FFFFFF;
+  background-color: rgba(56, 56, 56, 0.7);
+  height:48px ;
+  padding-left: 24px;
+  padding-top: 16px;
+}
+
+._first-img__block{
+  position: relative;
+  max-width: 400px;
+}
+
+.price__bali{
+  position: absolute;
+  bottom: 0.8%;
+  width: 400px;
+}
+
+._second-img__block{
+  position: relative;
+  max-width: 400px;
+}
+
+.price__rotterdam {
+  position: absolute;
+  bottom: 0.8%;
+  width: 400px;
+}
+
+._third-img__block{
+  position: relative;
+  max-width: 400px;
+}
+
+.price__ourica {
+  position: absolute;
+  bottom: 0.8%;
+  width: 400px;
+}
+
+.reviews__circle{
+  right: 4.6%;
+  bottom: 50%;
+}
+
+.reviews-bottom{
+  max-width: 400px;
+  height: 358px;
+  background-color: #EAF0F9;
+  margin-top: -4px;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+._usa__feedback{
+  padding-bottom: 24px;
+}
+
+.reviews-bottom__container{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap:16px;
+  justify-content: center;
+  margin-bottom: 120px;
+  align-items: stretch;
+}
+
+.reviews-bottom__block{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, 21px);
+  row-gap:16px;
+  column-gap: 24px;
+  justify-content: space-between;
+  margin-bottom: 29px;
+}
+
+.reviews-bottom__title{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  color: #3077c6;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.16;
+}
+
+.reviews-bottom__title--description{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  color: #3077c6;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.16;
+}
+
+.reviews-bottom__rating{
+  width: 48px;
+  height: 32px;
+  color:#FFFFFF;
+  background-color:#10367C;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.38;
+  justify-self: end;
+  padding: 4px 11px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.user__account-svg{
+  width: 53px;
+  height: 53px;
+  margin-left: 5px;
+}
+
+.reviews-bottom__number-rev{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color:#BFBFBF;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.reviews-bottom__user-account{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 21px;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.reviews-bottom__user-account--name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.16;
+  color:#383838;
+  grid-column: 2 / 3;
+  margin-bottom: 8px;
+}
+
+.reviews-bottom__user-account--country{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.16;
+  color:#BFBFBF;
+}
+
+.user-feedback {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.17;
+  color:#383838;
+}
+
+.reviews-bottom__nav{
+  display: none;
+}
+
 /* section-footer*/
 
 .footer {
   align-items: center;
   box-sizing: border-box;
   max-width: 1440px;
-  min-height: 625px;
+  padding-bottom: 104px;
 }
 
 .footer__bg{
@@ -761,284 +1040,6 @@ a {
   color: #ffffff;
   margin-left: 104px;
 }
-
-
-
-
-.section-sign-up{
- max-width: 1232px;
-  background-color:#EAF0F9;
-  height: 200px;
-  margin: 0 104px;
-  position: relative;
-}
-.sign-up-hidden{
-  display: none;
-}
-
-.section-sign-up__items{
-  width: 100%;
-}
-
-.section-sign-up__text{
-  display: block;
-  margin-left: 134px;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 28px;
-  padding-top: 51px;
-}
-.section-sign-up__logo--hidden{
-  display: none;
-}
-
-.user__svg{
-  position: absolute;
-  width: 86px;
-  height: 86px;
-  top:30%;
-  left:2%;
-}
-
-.close__svg{
-  width: 26px;
-  height: 26px;
-  position: absolute;
-  right:2%;
-  top:12%;
-}
-.instal-link{
-  display: none;
-}
-
-.section-sign-up__submit{
-  color:#3077C6;
-  background-color: #ffffff;
-  border: 1px #3077C6 solid;
-  width: 128px;
-  height: 48px;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  position: absolute;
-  bottom:25%;
-  left:10.8%;
-  z-index: 2;
-}
-.section-reviews{
-  max-height: 1161px;
-  padding-top: 120px;
-  max-width:1440px ;
-  position: relative;
-}
-
-.reviews__title {
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 47px;
-  color: #383838;
-  text-align: center;
-  padding-bottom: 8px;
-  margin-bottom: 104px;
-}
-
-.review__galery{
-  display: flex;
- flex-wrap: wrap;
-  column-gap:16px;
-  align-items: flex-start;
-  justify-content: center;
-
-
-
-}
-.review__galery__img{
-  width:100% ;
-}
-.review__img{
-  max-width: 100%;
-  height: auto;
-}
-
-.text-on-picture{
-  display: block;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 21px;
-  color:#FFFFFF;
-  background-color: rgba(56, 56, 56, 0.7);
-  height:48px ;
-  padding-left: 24px;
- padding-top: 16px;
-}
-
-._first-img__block{
-  position: relative;
-  max-width: 400px;
-}
-
-.price__bali{
-  position: absolute;
-  bottom: 0.8%;
-  width: 400px;
-}
-
-._second-img__block{
-  position: relative;
-  max-width: 400px;
-}
-
-.price__rotterdam {
-  position: absolute;
-  bottom: 0.8%;
-  width: 400px;
-}
-._third-img__block{
-  position: relative;
-  max-width: 400px;
-}
-.price__ourica {
-  position: absolute;
-  bottom: 0.8%;
-  width: 400px;
-}
-
-.reviews__circle{
-  right: 4.6%;
-  bottom: 50%;
-}
-
-.reviews-bottom{
-  max-width: 400px;
-  height: 358px;
-  background-color: #EAF0F9;
-  margin-top: -4px;
-  padding-top: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
-
-}
-._usa__feedback{
-  padding-bottom: 24px;
-}
-
-.reviews-bottom__container{
-  display: flex;
-  flex-wrap: wrap;
-  column-gap:16px;
-  justify-content: center;
-  margin-bottom: 120px;
-  align-items: stretch;
-}
-
-.reviews-bottom__block{
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, 21px);
-  row-gap:16px;
-  column-gap: 24px;
-  justify-content: space-between;
-  margin-bottom: 29px;
-
-
-}
-.reviews-bottom__title{
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  color: #3077c6;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 21px;
-
-}
-.reviews-bottom__title--description{
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  color: #3077c6;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-
-
-}
-.reviews-bottom__rating{
-  width: 48px;
-  height: 32px;
-  color:#FFFFFF;
-  background-color:#10367C;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 25px;
-justify-self: end;
-padding: 4px 11px;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-.user__account-svg{
-  width: 53px;
-  height: 53px;
-  margin-left: 5px;
-
-
-}
-.reviews-bottom__number-rev{
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  color:#BFBFBF;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-
-}
-.reviews-bottom__user-account{
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  column-gap: 21px;
-  justify-content: start;
-  align-items: center;
-  margin-bottom: 22px;
-
-}
-
-
-.reviews-bottom__user-account--name {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  color:#383838;
-  grid-column: 2 / 3;
-  margin-bottom: 8px;
-
-
-}
-.reviews-bottom__user-account--country{
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  color:#BFBFBF;
-
-
-}
-.user-feedback {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.17;
-  color:#383838;
-}
-.reviews-bottom__nav{
-  display: none;
-}
-
-
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 768px) {
@@ -1438,18 +1439,21 @@ padding: 4px 11px;
     max-height: 100%;
   }
 
-  .caption {
+  .section-homes__hotel-name {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.16;
     margin-top: 8px;
   }
 
-  .picture-description {
+  .section-homes__hotel-location {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.16;
     margin-top: 4px;
+  }
+  .section-destinations{
+    padding-top: 24px;
   }
 
   .section-destinations__title-block {
@@ -1530,7 +1534,7 @@ padding: 4px 11px;
 
   .section-sign-up{
     background-color: transparent;
-    max-height: 203px;
+    margin-top: 24px;
   }
 
   .section-sign-up__items{
@@ -1541,7 +1545,6 @@ padding: 4px 11px;
     justify-items: center;
     gap:16px;
     align-self: center;
-
   }
 
   .section-sign-up__text{
@@ -1564,10 +1567,9 @@ padding: 4px 11px;
     display: none;
   }
 
-  .close__svg{
-    width: 16px;
-    height: auto;
-    order:1;
+  .section-sign-up__close{
+    width:16px ;
+    order: 1;
     position: static;
   }
 
@@ -1591,13 +1593,14 @@ padding: 4px 11px;
     color: #3077C6;
     font-size: 14px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.14;
+    cursor: pointer;
   }
 
   .footer__column__subtitle {
     font-size: 15px;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 1.2;
   }
 
   .footer__column {
@@ -1610,7 +1613,7 @@ padding: 4px 11px;
     width: 219px;
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.16;
     text-align: center;
     margin: 0 auto;
   }
@@ -1641,6 +1644,7 @@ padding: 4px 11px;
   ._property {
     white-space: nowrap;
   }
+
   .section-reviews{
     padding-top: 40px;
   }
@@ -1712,8 +1716,6 @@ padding: 4px 11px;
 }
 
 
-
-
 @media only screen and (max-width: 480px) {
   /* For mobile phones: */
   [class*="col-"] {
@@ -1755,7 +1757,7 @@ padding: 4px 11px;
   .headline{
     font-size: 30px;
     font-weight: 500;
-    line-height: 35px;
+    line-height: 1.16;
   }
 
   .headline__top-section {
@@ -1818,7 +1820,7 @@ padding: 4px 11px;
     border: none;
     font-size: 15px;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 1.2;
     color: #383838;
   }
 
@@ -1862,7 +1864,7 @@ padding: 4px 11px;
     margin: 4px 0 4px 8px;
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.6;
     text-align: center;
     color: #383838;
   }
@@ -1871,7 +1873,7 @@ padding: 4px 11px;
     border: none;
     font-size: 15px;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 1.2;
     margin-left: 8px;
     color: #383838;
     width: 110px;
@@ -1988,7 +1990,7 @@ padding: 4px 11px;
     background-color: #3077c6;
     font-size: 19px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 1.15;
     color: #ffffff;
   }
 
@@ -2091,6 +2093,7 @@ padding: 4px 11px;
   .guests-item__forth {
     display: none;
   }
+
   .circle{
     width: 28px;
     height: 28px;
@@ -2108,30 +2111,19 @@ padding: 4px 11px;
     left: 30%;
   }
 
-  .caption {
+  .section-homes__hotel-name {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.16;
     margin-top: 8px;
   }
 
-  .picture-description {
+  .section-homes__hotel-location {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.16;
     margin-top: 4px;
   }
-
-
-
-
-
-
-
-
-
-
-
 
   .section-destinations__title-block {
     margin-bottom: 32px;
@@ -2141,43 +2133,45 @@ padding: 4px 11px;
   .section-destinations__title {
     font-size: 28px;
     font-weight: 500;
-    line-height: 33px;
+    line-height: 1.17;
   }
 
   .section-destinations__buttons {
     display: flex;
     gap: 16px;
     justify-content: center;
-    padding-left: 0;
-    height: 32px;
     width: 100%;
     margin-bottom: 24px;
-    cursor: pointer;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .section-destinations__button-regions {
     font-size: 19px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 1.15;
     outline: none;
-    width: 99px;
   }
+
   .section-destinations__button-regions{
-    min-height:32px;
+   width: calc(33.33% - 16px);
+    min-width: 99px;
   }
-  
 
   .section-destinations__button-cities{
-    width: 99px;
+    width: calc(33.33% - 16px);
   }
 
   .section-destinations__button-places{
-    width: 99px;
+    width: calc(33.33% - 16px);
   }
 
   .section-destinations {
     margin: 0 auto;
+  }
 
+  .section-destinations__img{
+    max-width: 153px;
   }
 
   .hidden-button {
@@ -2204,11 +2198,10 @@ padding: 4px 11px;
     left: 28%;
     bottom: 29%;
     transform:rotate(0deg) ;
-
   }
 
   .section-destinations__circle-position{
-    left:78.4%;
+    left:84%;
     top: 42%;
   }
 
@@ -2220,16 +2213,13 @@ padding: 4px 11px;
     margin-top: 8px;
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.16;
   }
-
-
 
   .section-sign-up{
     width: 100%;
     padding: 0 auto;
-    margin: 0;
-    height: auto;
+    margin: 0 auto;
   }
 
   .section-sign-up__items{
@@ -2242,7 +2232,7 @@ padding: 4px 11px;
   .section-sign-up__text{
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.16;
     text-align: center;
     margin-left: 0;
     padding-top: 0;
@@ -2288,6 +2278,7 @@ padding: 4px 11px;
     font-weight: 500;
     line-height: 16px;
   }
+
   .footer__column__subtitle--desc {
     display: none;
   }
@@ -2302,7 +2293,7 @@ padding: 4px 11px;
   .footer__column__subtitle {
     font-size: 15px;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 1.2;
   }
 
   .footer__column {
@@ -2316,7 +2307,7 @@ padding: 4px 11px;
     text-align: center;
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.16;
   }
 
   .footer {
@@ -2344,38 +2335,39 @@ padding: 4px 11px;
     font-weight: 500;
     line-height: 18px;
   }
-  .section-reviews{
 
-
-
-
-  }
   ._second-img__block{
     display: none;
   }
+
   ._king-kong-hostel{
     display: none;
   }
+
   .reviews__circle{
     display: none;
   }
+
   .review__galery{
     display: block;
     margin: 0 auto;
   }
+
   .review__galery__img {
     max-width:327px ;
     margin: 0 auto;
   }
+
   .reviews-bottom__number-rev{
     font-size: 12px;
     line-height: 14px;
     margin-top: 5px;
   }
+
   .reviews-bottom{
     max-width: 327px;
-
   }
+
   .reviews-bottom__rating{
     font-size: 15px;
     line-height: 20px;
@@ -2384,59 +2376,61 @@ padding: 4px 11px;
     text-align: center;
     margin: 0 auto;
   }
+
   .user__account-svg{
     width: 44px;
     height: 44px;
   }
+
   .reviews-bottom__user-account--name{
     font-size: 15px;
     line-height: 18px;
     margin-bottom: 4px;
   }
+
   .reviews-bottom__user-account--country{
     font-size: 15px;
     line-height: 18px;
   }
+
   .reviews-bottom__user-account{
     margin-bottom: 21px;
     column-gap: 13px;
   }
+
   .reviews-bottom__user-feedback{
     margin-bottom: 32px;
   }
+
   .user-feedback{
     font-size: 15px;
-    line-height: 18px;
+    line-height: 1.2;
   }
+
   .reviews-bottom__container{
     margin-bottom: 0;
     position: relative;
     width: 100%;
   }
+
   .reviews-bottom__nav{
     display: block;
     margin: 0 auto;
     position: relative;
-
-
-
   }
+
   .nav__svg{
     width: 56px;
     height: 8px;
     position: absolute;
     bottom: 0;
     z-index: 2;
-
-
   }
 
   .section-reviews__bg__sm{
     background-color:#EAF0F9;
-
-
+    padding-bottom: 40px;
   }
-
 }
 
 
