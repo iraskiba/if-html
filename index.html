@@ -35,13 +35,14 @@
       </svg>
       </symbol>
       <symbol id="night" viewBox="0 0 30 30">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M25.6101 10.6101V4.38992H19.3899L15 0L10.6101 4.38992H4.38992V10.6101L0 15L4.38992 19.3899V25.6101H10.6101L15 30L19.3899 25.6101H25.6101V19.3899L30 15L25.6101 10.6101ZM15 22.9576C13.8196 22.9576 12.6923 22.6923 11.6844 22.2281C14.4164 20.9682 16.3263 18.2096 16.3263 15C16.3263 11.7905 14.4164 9.03183 11.6844 7.77188C12.6923 7.30769 13.8196 7.04244 15 7.04244C19.3899 7.04244 22.9576 10.6101 22.9576 15C22.9576 19.3899 19.3899 22.9576 15 22.9576Z" fill="white"/>
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+          <title>change color theme</title>
+          <path d="M25.6101 10.6101V4.38992H19.3899L15 0L10.6101 4.38992H4.38992V10.6101L0 15L4.38992 19.3899V25.6101H10.6101L15 30L19.3899 25.6101H25.6101V19.3899L30 15L25.6101 10.6101ZM15 22.9576C13.8196 22.9576 12.6923 22.6923 11.6844 22.2281C14.4164 20.9682 16.3263 18.2096 16.3263 15C16.3263 11.7905 14.4164 9.03183 11.6844 7.77188C12.6923 7.30769 13.8196 7.04244 15 7.04244C19.3899 7.04244 22.9576 10.6101 22.9576 15C22.9576 19.3899 19.3899 22.9576 15 22.9576Z" />
         </svg>
       </symbol>
       <symbol id="account" viewBox="0 0 40 40" >
-       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM20 6C23.32 6 26 8.68 26 12C26 15.32 23.32 18 20 18C16.68 18 14 15.32 14 12C14 8.68 16.68 6 20 6ZM20 34.4C15 34.4 10.58 31.84 8 27.96C8.06 23.98 16 21.8 20 21.8C23.98 21.8 31.94 23.98 32 27.96C29.42 31.84 25 34.4 20 34.4Z" fill="white"/>
+       <svg width="40" height="40" viewBox="0 0 40 40" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM20 6C23.32 6 26 8.68 26 12C26 15.32 23.32 18 20 18C16.68 18 14 15.32 14 12C14 8.68 16.68 6 20 6ZM20 34.4C15 34.4 10.58 31.84 8 27.96C8.06 23.98 16 21.8 20 21.8C23.98 21.8 31.94 23.98 32 27.96C29.42 31.84 25 34.4 20 34.4Z" />
       </svg>
     </symbol>
       <symbol id="google" viewBox="0 0 135 40">
@@ -226,13 +227,13 @@
 
     <nav class="top-section__navigate-link--night-account">
       <a href="#">
-        <svg class="night__svg stroke">
+        <svg class="night__svg" aria-label="change color theme">
           <use href="#night"></use>
         </svg>
       </a>
 
       <a href="#">
-        <svg class="account__svg atroke">
+        <svg class="account__svg" aria-label="login button">
           <use href="#account"></use>
         </svg>
       </a>
@@ -240,7 +241,7 @@
   </nav>
 
 <nav class="top-section__links-block__menu">
-  <a href="#" class="menu">
+  <a href="#" class="menu" aria-label="open additional menu">
     <svg class="menu__svg">
       <use href="#menu"></use>
     </svg>
@@ -256,7 +257,7 @@
     <div class="form__city form__city--hidden">
       <form>
       <div class="form__city form__city__loupe--svg">
-        <svg class="form__city svg-loupe">
+        <svg class="form__city svg-loupe" aria-label="click to search">
         <use href="#loupe" ></use>
         </svg>
         <input class="form__city form__city__hidden--input" type="text" id="city-hidden"
@@ -303,7 +304,6 @@
     </div>
   </div>
 
-
     <div class="form-section lg-12-col">
 
       <form>
@@ -348,7 +348,6 @@
 <div class="wrapper">
 <section class="section-offer">
   <h2 class="col-4-lg section-offer__title">What do we offer</h2>
-
 
   <div class="section-offer__list">
 
@@ -399,7 +398,6 @@
 </section>
 </div>
 
-
   <section class="section-homes section-homes__bg">
     <div class="wrapper">
 
@@ -434,7 +432,7 @@
         </div>
       </div>
 
-      <button class="circle section-homes__circle-position">
+      <button class="circle section-homes__circle-position" aria-label="arrow scroll right">
         <svg class="arrow__svg">
           <use href="#arrow" ></use>
         </svg>
@@ -457,30 +455,30 @@
 
       <div class="section-destinations__items">
         <div class="section-destinations-items__first">
-          <img src="images/maldives.jpg" alt="maldives" class="section-destinations__img"/>
-          <p class="section-destinations-items__figcaption">Maldives<p>
+          <img src="images/maldives.jpg" alt="maldives blue water and palm trees" class="section-destinations__img"/>
+          <p class="section-destinations-items__figcaption">Maldives</p>
+          <button class="section-destinations-items__submit">Book now</button>
         </div>
 
-        <button class="section-destinations-items__submit">Book now</button>
-
         <div class="section-destinations-items__second">
-          <img src="images/spain.jpg" alt="spain" class="section-destinations__img"/>
-          <p class="section-destinations-items__figcaption">Spain<p>
+          <img src="images/spain.jpg" alt="spain coast and yachts" class="section-destinations__img"/>
+          <p class="section-destinations-items__figcaption">Spain</p>
+          <button class="section-destinations-items__submit">Book now</button>
         </div>
 
 
         <div class="section-destinations-items__third">
-          <img src="images/norway.jpg" alt="norway" class="section-destinations__img"/>
-          <p class="section-destinations-items__figcaption">Norway<p>
+          <img src="images/norway.jpg" alt="norway houses in the mountains" class="section-destinations__img"/>
+          <p class="section-destinations-items__figcaption">Norway</p>
         </div>
 
 
         <div class="section-destinations-items__forth">
-          <img src="images/island.jpg" alt="island" class="section-destinations__img"/>
-          <p class="section-destinations-items__figcaption">Island<p>
+          <img src="images/island.jpg" alt="island landscape volcanic coast" class="section-destinations__img"/>
+          <p class="section-destinations-items__figcaption">Island</p>
         </div>
 
-        <button class="circle section-destinations__circle-position">
+        <button class="circle section-destinations__circle-position" aria-label="arrow show more">
           <svg class="section-destinations__items--arrow">
             <use href="#arrow" ></use>
           </svg>
@@ -492,7 +490,6 @@
     </section>
   </div>
 
-
   <div class="wrapper">
     <section class="section-sign-up">
 
@@ -500,13 +497,13 @@
 
         <p class="col-5-lg section-sign-up__text">Sign up and get 20% &#10off your first booking</p>
 
-        <div class="section-sign-up__user-img">
+        <div class="section-sign-up__user-img" aria-label="sign in">
           <svg class="user__svg">
             <use href="#user" ></use>
           </svg>
         </div>
 
-        <button class="section-sign-up__close">
+        <button class="section-sign-up__close" aria-label="close button">
           <svg class="close__svg">
             <use href="#cross" ></use>
         </button>
@@ -526,11 +523,6 @@
     </section>
   </div>
 
-
-
-
-
-
   <div class="wrapper section-reviews__bg__sm">
     <section class="section-reviews">
       <header class="section__reviews__title">
@@ -540,28 +532,28 @@
       <div class="review__galery">
 
         <div class="review__galery__img _first-img__block">
-          <img src="images/bali.jpg" alt="bali" class="review__img"/>
+          <img src="images/bali.jpg" alt="bali willa with swimming pool" class="review__img"/>
           <div class="price__bali">
             <p class="text-on-picture">From 250 USD</p>
           </div>
         </div>
 
         <div class="review__galery__img _second-img__block">
-          <img src="images/rotterdam.jpg" alt="rotterdam" class="review__img"/>
+          <img src="images/rotterdam.jpg" alt="rotterdam hostel room" class="review__img"/>
           <div class="price__rotterdam">
             <p class="text-on-picture">From 40 USD</p>
           </div>
         </div>
 
         <div class="review__galery__img _third-img__block">
-          <img src="images/ourica.jpg" alt="ourica" class="review__img"/>
+          <img src="images/ourica.jpg" alt="ourica hotel lobby" class="review__img"/>
           <div class="price__ourica">
             <p class="text-on-picture">From 100 USD</p>
           </div>
         </div>
       </div>
 
-      <button class="circle reviews__circle">
+      <button class="circle reviews__circle" aria-label="arrow scroll right">
         <svg class="arrow__svg">
           <use href="#arrow" ></use>
         </svg>
@@ -577,10 +569,10 @@
           </div>
 
           <div class="reviews-bottom__user-account">
-            <figure class="reviews-bottom__user-account--img">
+            <div class="reviews-bottom__user-account--img">
               <svg class="user__account-svg">
                 <use href="#user-acc" ></use>
-            </figure>
+            </div>
 
             <div>
               <p class="reviews-bottom__user-account--name">Hanna Ivanova</p>
@@ -634,10 +626,10 @@
             <p class="reviews-bottom__number-rev">815 reviews</p>
           </div>
           <div class="reviews-bottom__user-account">
-            <figure class="reviews-bottom__user-account--img">
+            <div class="reviews-bottom__user-account--img">
               <svg class="user__account-svg">
                 <use href="#user-acc" ></use>
-            </figure>
+            </div>
             <div>
               <p class="reviews-bottom__user-account--name">Anika Messer</p>
               <p class="reviews-bottom__user-account--country">&#127465;&#127466; <span>Germany</span></p>
