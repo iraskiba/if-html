@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="about HTML and CSS" />
-    <meta name="keywords" content="HTML,CSS,forms" />
+    <meta name="description" content="about hotel booking" />
+    <meta name="keywords" content="booking,triphous,guest" />
     <meta name="author" content="Irina Skiba" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Title</title>
+    <link type="image/x-icon" href="images/favicon.ico" rel="icon">
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
   <svg class="svg_sprite" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="nav" viewBox="0 0 56 8">
+      <svg width="56" height="8" viewBox="0 0 56 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="4" cy="4" r="4" fill="#333333"/>
+        <circle cx="20" cy="4" r="3.5" stroke="#333333"/>
+        <circle cx="36" cy="4" r="3.5" stroke="#333333"/>
+        <circle cx="52" cy="4" r="3.5" stroke="#333333"/>
+      </svg>
+    </symbol>
       <symbol id="logo" viewBox="0 0 205 40">
       <svg width="205" height="40" viewBox="0 0 205 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.840915 11.0236C0.634374 10.6937 0.442587 10.2437 0.265552 9.67379C0.0885173 9.10386 0 8.50394 0 7.87402C0 6.70416 0.250799 5.86427 0.752398 5.35433C1.2835 4.84439 1.96213 4.58943 2.7883 4.58943H22.0851C22.2916 4.91938 22.4834 5.36933 22.6604 5.93926C22.8375 6.50919 22.926 7.10911 22.926 7.73903C22.926 8.90889 22.6604 9.74878 22.1293 10.2587C21.6277 10.7687 20.9639 11.0236 20.1377 11.0236H15.225V31.811C14.9004 31.901 14.3841 31.991 13.6759 32.081C12.9973 32.171 12.3187 32.216 11.64 32.216C10.9614 32.216 10.3565 32.156 9.82543 32.036C9.32383 31.946 8.896 31.766 8.54193 31.4961C8.18786 31.2261 7.9223 30.8511 7.74527 30.3712C7.56823 29.8913 7.47972 29.2613 7.47972 28.4814V11.0236H0.840915Z" fill="#3077C6"/>
@@ -25,13 +35,14 @@
       </svg>
       </symbol>
       <symbol id="night" viewBox="0 0 30 30">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M25.6101 10.6101V4.38992H19.3899L15 0L10.6101 4.38992H4.38992V10.6101L0 15L4.38992 19.3899V25.6101H10.6101L15 30L19.3899 25.6101H25.6101V19.3899L30 15L25.6101 10.6101ZM15 22.9576C13.8196 22.9576 12.6923 22.6923 11.6844 22.2281C14.4164 20.9682 16.3263 18.2096 16.3263 15C16.3263 11.7905 14.4164 9.03183 11.6844 7.77188C12.6923 7.30769 13.8196 7.04244 15 7.04244C19.3899 7.04244 22.9576 10.6101 22.9576 15C22.9576 19.3899 19.3899 22.9576 15 22.9576Z" fill="white"/>
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+          <title>change color theme</title>
+          <path d="M25.6101 10.6101V4.38992H19.3899L15 0L10.6101 4.38992H4.38992V10.6101L0 15L4.38992 19.3899V25.6101H10.6101L15 30L19.3899 25.6101H25.6101V19.3899L30 15L25.6101 10.6101ZM15 22.9576C13.8196 22.9576 12.6923 22.6923 11.6844 22.2281C14.4164 20.9682 16.3263 18.2096 16.3263 15C16.3263 11.7905 14.4164 9.03183 11.6844 7.77188C12.6923 7.30769 13.8196 7.04244 15 7.04244C19.3899 7.04244 22.9576 10.6101 22.9576 15C22.9576 19.3899 19.3899 22.9576 15 22.9576Z" />
         </svg>
       </symbol>
       <symbol id="account" viewBox="0 0 40 40" >
-       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM20 6C23.32 6 26 8.68 26 12C26 15.32 23.32 18 20 18C16.68 18 14 15.32 14 12C14 8.68 16.68 6 20 6ZM20 34.4C15 34.4 10.58 31.84 8 27.96C8.06 23.98 16 21.8 20 21.8C23.98 21.8 31.94 23.98 32 27.96C29.42 31.84 25 34.4 20 34.4Z" fill="white"/>
+       <svg width="40" height="40" viewBox="0 0 40 40" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM20 6C23.32 6 26 8.68 26 12C26 15.32 23.32 18 20 18C16.68 18 14 15.32 14 12C14 8.68 16.68 6 20 6ZM20 34.4C15 34.4 10.58 31.84 8 27.96C8.06 23.98 16 21.8 20 21.8C23.98 21.8 31.94 23.98 32 27.96C29.42 31.84 25 34.4 20 34.4Z" />
       </svg>
     </symbol>
       <symbol id="google" viewBox="0 0 135 40">
@@ -186,110 +197,112 @@
         <path d="M49.2609 30.456C49.2609 31.0632 49.0424 31.5385 48.6054 31.882C48.1684 32.2255 47.5245 32.3973 46.6735 32.3973C46.3515 32.3973 46.0525 32.3733 45.7765 32.3254C45.5005 32.2775 45.2628 32.2056 45.0635 32.1097C44.8719 32.0058 44.7185 31.878 44.6035 31.7262C44.4962 31.5744 44.4425 31.3947 44.4425 31.187C44.4425 30.9953 44.4809 30.8355 44.5575 30.7077C44.6342 30.5718 44.7262 30.46 44.8335 30.3721C45.0558 30.5 45.3088 30.6158 45.5925 30.7196C45.8838 30.8155 46.2173 30.8634 46.593 30.8634C46.8306 30.8634 47.0108 30.8275 47.1335 30.7556C47.2638 30.6837 47.329 30.5878 47.329 30.468C47.329 30.3562 47.283 30.2683 47.191 30.2044C47.099 30.1405 46.9456 30.0885 46.731 30.0486L46.386 29.9767C45.719 29.8409 45.2207 29.6292 44.891 29.3416C44.569 29.046 44.408 28.6266 44.408 28.0833C44.408 27.7878 44.4694 27.5201 44.592 27.2805C44.7147 27.0408 44.8872 26.8411 45.1095 26.6813C45.3318 26.5215 45.5963 26.3977 45.903 26.3098C46.2173 26.2219 46.5623 26.178 46.938 26.178C47.2216 26.178 47.4861 26.202 47.7315 26.2499C47.9845 26.2899 48.203 26.3538 48.3869 26.4416C48.5709 26.5295 48.7166 26.6454 48.8239 26.7892C48.9313 26.925 48.9849 27.0887 48.9849 27.2805C48.9849 27.4642 48.9504 27.624 48.8814 27.7598C48.8201 27.8876 48.7396 27.9955 48.6399 28.0833C48.5786 28.0434 48.4866 28.0035 48.3639 27.9635C48.2413 27.9156 48.1071 27.8756 47.9615 27.8437C47.8158 27.8037 47.6663 27.7718 47.513 27.7478C47.3673 27.7238 47.2331 27.7119 47.1105 27.7119C46.8575 27.7119 46.662 27.7438 46.524 27.8077C46.386 27.8636 46.317 27.9555 46.317 28.0833C46.317 28.1712 46.3553 28.2431 46.432 28.299C46.5087 28.355 46.6543 28.4069 46.869 28.4548L47.2255 28.5387C47.9615 28.7145 48.4828 28.9581 48.7894 29.2697C49.1038 29.5732 49.2609 29.9687 49.2609 30.456Z" fill="white"/>
         <path d="M53.2177 32.3853C52.7653 32.3853 52.3437 32.3214 51.9527 32.1936C51.5694 32.0578 51.232 31.858 50.9407 31.5944C50.657 31.3308 50.4309 30.9992 50.2622 30.5998C50.1012 30.2004 50.0207 29.733 50.0207 29.1978C50.0207 28.6705 50.1012 28.2191 50.2622 27.8437C50.4309 27.4602 50.6494 27.1486 50.9177 26.909C51.186 26.6613 51.4927 26.4816 51.8377 26.3697C52.1827 26.2499 52.5353 26.19 52.8957 26.19C53.302 26.19 53.67 26.2539 53.9996 26.3817C54.337 26.5095 54.6245 26.6853 54.8621 26.909C55.1075 27.1327 55.2953 27.4003 55.4256 27.7119C55.5636 28.0234 55.6326 28.3629 55.6326 28.7304C55.6326 29.0021 55.5598 29.2098 55.4141 29.3536C55.2684 29.4974 55.0653 29.5892 54.8046 29.6292L51.9642 30.0725C52.0485 30.3362 52.221 30.5359 52.4817 30.6717C52.7423 30.7995 53.0413 30.8634 53.3787 30.8634C53.693 30.8634 53.9881 30.8235 54.2641 30.7436C54.5478 30.6557 54.7778 30.5559 54.9541 30.444C55.0768 30.5239 55.1803 30.6358 55.2646 30.7796C55.3489 30.9234 55.3911 31.0751 55.3911 31.2349C55.3911 31.5944 55.2301 31.862 54.9081 32.0378C54.6628 32.1736 54.3868 32.2655 54.0801 32.3134C53.7735 32.3613 53.486 32.3853 53.2177 32.3853ZM52.8957 27.6759C52.7117 27.6759 52.5507 27.7079 52.4127 27.7718C52.2823 27.8357 52.175 27.9196 52.0907 28.0234C52.0064 28.1193 51.9412 28.2311 51.8952 28.359C51.8568 28.4788 51.8339 28.6026 51.8262 28.7304L53.7926 28.3949C53.7696 28.2351 53.6853 28.0754 53.5396 27.9156C53.394 27.7558 53.1793 27.6759 52.8957 27.6759Z" fill="white"/>
       </svg>
-
+    </symbol>
+    <symbol id="user-acc" viewBox="0 0 54 54">
+      <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M27 0.333374C12.28 0.333374 0.333313 12.28 0.333313 27C0.333313 41.72 12.28 53.6667 27 53.6667C41.72 53.6667 53.6666 41.72 53.6666 27C53.6666 12.28 41.72 0.333374 27 0.333374ZM27 8.33337C31.4266 8.33337 35 11.9067 35 16.3334C35 20.76 31.4266 24.3334 27 24.3334C22.5733 24.3334 19 20.76 19 16.3334C19 11.9067 22.5733 8.33337 27 8.33337ZM27 46.2C20.3333 46.2 14.44 42.7867 11 37.6134C11.08 32.3067 21.6666 29.4 27 29.4C32.3066 29.4 42.92 32.3067 43 37.6134C39.56 42.7867 33.6666 46.2 27 46.2Z" fill="#BFBFBF"/>
+      </svg>
     </symbol>
   </svg>
 
-<div class="top-section">
-  <div class="container">
+<section class="top-section top-section__bg ">
+  <div class="wrapper">
 
-<nav class="top-section__navigate-link">
-  <nav class="top-section__logo-block lg-3-col">
-          <a href=# class="top-section__logo-triphous">
-            <svg class="top-section__logo-triphous&#45;&#45;logo-svg">
-             <use href="#logo" ></use>
-           </svg>
-             </a>
-          </nav>
+ <nav class="top-section__navigate-link">
 
-          <nav class="top-section__links-block lg-4-col">
-            <nav class="top-section__stays-atractions-block">
-            <nav class="top-section__stays-atractions-block--line-stays">
-             <a href="#" class="top-section__stays-atractions-block&#45;&#45;stays"><p><span class="line_orange">Stays</span></p></a></nav>
-            <a href="#" class="top-section__stays-atractions-block--attractions"><p><span class="line_orange_attraction">Attractions</span></p></a>
-          </nav>
+  <nav class="top-section__navigate-link__logo-block lg-3-col">
+    <a href=# class="top-section__logo">
+      <svg class="top-section__logo--svg">
+        <use href="#logo" ></use>
+      </svg>
+    </a>
+  </nav>
 
-            <nav class="top-section__night-account-block">
-         <a href="#" class="night">
-        <svg class="night__img-svg">
+  <nav class="top-section__navigate-link__links-block lg-4-col">
+    <nav class="links-block__stays-atractions">
+      <nav class="links-block__stays-atractions--stays-line">
+        <a href="#" class="links-block__stays-atractions--stays-text"><p><span class="line_orange">Stays</span></p></a></nav>
+        <a href="#" class="links-block__stays-atractions--attractions-text"><p><span class="line_orange_attraction">Attractions</span></p></a>
+    </nav>
+
+    <nav class="top-section__navigate-link--night-account">
+      <a href="#">
+        <svg class="night__svg" aria-label="change color theme">
           <use href="#night"></use>
         </svg>
-        </a>
+      </a>
 
-        <a href="#" class="account">
-        <svg class="account__img-svg">
+      <a href="#">
+        <svg class="account__svg" aria-label="login button">
           <use href="#account"></use>
         </svg>
-        </a>
-        </nav>
-          </nav>
+      </a>
+    </nav>
+  </nav>
 
-<nav class="top-section__links-block__menu--hidden">
-  <a href="#" class="menu">
-    <svg class="menu__img-svg--hidden">
+<nav class="top-section__links-block__menu">
+  <a href="#" class="menu" aria-label="open additional menu">
+    <svg class="menu__svg">
       <use href="#menu"></use>
     </svg>
   </a>
 </nav>
-      </nav>
+    <div class="headline__top-section lg-6-col">
+      <h1 class="headline">Discover stays to&nbsp;live,&nbsp;work or just relax</h1>
+    </div>
 
-    <section class="headline lg-6-col">
-        <h1 class="headline__text">еуыеDiscover stays to&nbsp;live,&nbsp;work or just relax</h1>
-    </section>
-
-
-  <section class="top-section__form--hidden sm-6-col">
-    <div class="form__city--hidden">
-    <form>
-      <div class="form__city__loupe--svg">
-        <svg class="svg-loupe">
+  <div class="top-section__form--hidden sm-6-col">
+    <div class="form__city form__city--hidden">
+      <form>
+      <div class="form__city form__city__loupe--svg">
+        <svg class="form__city svg-loupe" aria-label="click to search">
         <use href="#loupe" ></use>
-      </svg>
-        <input class="form__city__hidden--input" type="text" id="city-hidden"
+        </svg>
+        <input class="form__city form__city__hidden--input" type="text" id="city-hidden"
                value="Your destination or hotel">
       </div>
-    </form>
-  </div>
+    </div>
 
     <div class="form__date-in--hidden">
-      <form>
-        <label class="form__date-in__label" for="date-hidden">Check-in</label>
-        <input class="form__date-in__input" type="text" id="date-hidden" value="Tue 15 Sept 20">
-      </form>
+        <div>
+        <label class="form__date-in form__date-in__label" for="date-hidden">Check-in</label>
+        <input class="form__date-in form__date-in__input" type="text" id="date-hidden" value="Tue 15 Sept 20">
+        </div>
     </div>
 
       <div class="form__date-out--hidden">
-      <form>
-        <label class="form__date-out__label" for="date-hidden-out">Check-out</label>
-        <input class="form__date-out__input" type="text" id="date-hidden-out" value="Sat 19 Sept 20">
-      </form>
-    </div>
+        <div>
+        <label class="form__date-out form__date-out__label" for="date-hidden-out">Check-out</label>
+        <input class="form__date-out form__date-out__input" type="text" id="date-hidden-out" value="Sat 19 Sept 20">
+        </div>
+      </div>
 
     <div class="form-hidden__adults">
-      <form>
-        <label class="form-hidden__adults__label" for="adults">Adults</label>
-      <input class="form-hidden__adults__input" type="text" id="adults" value="2">
-      </form>
+      <div>
+        <label class="form__adults form__adults__label" for="adults">Adults</label>
+        <input class="form__adults form__adults__input" type="text" id="adults" value="2">
+      </div>
     </div>
 
     <div class="form-hidden__children">
-   <form>
-  <label class="form-hidden__children__label" for="children">Children</label>
-      <input class="form-hidden__children__input" type="text" id="children" value="0">
-   </form>
+      <div>
+        <label class="form__children form__children__label" for="children">Children</label>
+        <input class="form__children form__children__input" type="text" id="children" value="0">
+      </div>
     </div>
 
     <div class="form-hidden__rooms">
-      <label class="form-hidden__rooms__label" for="rooms">Rooms</label>
-      <input class="form-hidden__rooms__input" type="text" id="rooms" value="1">
+      <label class="form__rooms form__rooms__label" for="rooms">Rooms</label>
+      <input class="form__rooms form__rooms__input" type="text" id="rooms" value="1">
   </div>
+</form>
 
     <div class="form-hidden__button">
       <button class="button">Search</button>
     </div>
-  </section>
+  </div>
 
-    <section class="form-section lg-12-col">
+    <div class="form-section lg-12-col">
 
       <form>
         <div class="form-section__city-element">
@@ -298,19 +311,19 @@
         </div>
 
        <div class="form-section__date-element">
-           <label class="form-section__date-element--date__label" for="date">Check-in — Check-out</label>
-           <input class="form-section__date-element--date__form" type="text" id="date" value="Tue 15 Sept - Sat 19 Sept" >
+         <label class="form-section__date-element--date__label" for="date">Check-in — Check-out</label>
+         <input class="form-section__date-element--date__form" type="text" id="date" value="Tue 15 Sept - Sat 19 Sept" >
        </div>
 
       <div class="form-section__number-people"><p>2 Adults — 0 Children — 1 Room</p></div>
-<div>
-      <button class="button__element">Search</button>
-</div>
+     <div>
+      <button class="form-section__button-element">Search</button>
+     </div>
       </form>
-    </section>
+    </div>
 
       <footer class="download__section lg-1-col">
-          <div class="download__google-container" >
+          <div class=" download__google-container">
               <a href=# class="download__google-link">
                   <svg class="download__svg--google">
                       <use href="#google" ></use>
@@ -327,175 +340,315 @@
           </div>
       </footer>
       </div>
-    </div>
+    </section>
 </div>
 
 <div class="wrapper">
-<div class="section-offer">
+<section class="section-offer">
   <h2 class="col-4-lg section-offer__title">What do we offer</h2>
 
-
-  <section class="img__card__block">
+  <div class="section-offer__list">
 
     <div class="col-3-lg col-6-sm col-6-md">
-      <figure class="img__card">
+      <figure class="section-offer__list__item section-offer__list__item-first">
           <div>
-              <a href=#>
-                <svg class="img__card__headset-svg">
-                      <use href="#headset" ></use>
-                  </svg>
-              </a>
+            <svg class="section-offer__list__item--svg">
+              <use href="#headset" ></use>
+            </svg>
           </div>
           <figcaption class="text__after-img">Support 24/7</figcaption>
       </figure>
     </div>
 
     <div class="col-3-lg col-6-sm col-6-md">
-      <figure class="img__card">
+      <figure class="section-offer__list__item section-offer__list__item-second">
           <div>
-              <a href=#>
-                  <svg class="img__card__chat-svg">
-                      <use href="#chat" ></use>
-                  </svg>
-              </a>
+            <svg class="section-offer__list__item--svg">
+              <use href="#chat" ></use>
+            </svg>
           </div>
           <figcaption class="text__after-img">Communicate directly</figcaption>
       </figure>
     </div>
 
     <div class="col-3-lg col-6-sm col-6-md">
-      <figure class="img__card">
+      <figure class="section-offer__list__item section-offer__list__item-third">
           <div>
-              <a href=#>
-                  <svg class="img__card__device-svg">
-                      <use href="#device" ></use>
-                  </svg>
-              </a>
+            <svg class="section-offer__list__item--svg">
+              <use href="#device" ></use>
+            </svg>
           </div>
           <figcaption class="text__after-img">Book online</figcaption>
       </figure>
     </div>
 
     <div class="col-3-lg col-6-sm col-6-md">
-      <figure class="img__card">
+      <figure class="section-offer__list__item section-offer__list__item-firth">
           <div>
-              <a href=#>
-                  <svg class="img__card__like-svg">
-                      <use href="#like" ></use>
-                  </svg>
-              </a>
+            <svg class="section-offer__list__item--svg">
+              <use href="#like" ></use>
+            </svg>
           </div>
           <figcaption class="text__after-img">Real guest reviews</figcaption>
       </figure>
     </div>
-  </section>
+  </div>
+</section>
 </div>
-</div>
 
-
-  <div class="section-homes">
-    <div class="container">
-
+  <section class="section-homes section-homes__bg">
+    <div class="wrapper">
 
       <header class="section-homes__title">
         <h3 class="homes__title">Homes guests loves</h3>
       </header>
 
+      <div class="section-homes__items">
 
-      <section class="section-homes__items">
+        <div class="guests-item__first">
+          <img src="images/hotel.jpg" alt="hotel leopold saint petersburg" class="section-homes__items__img"/>
+          <p class="section-homes__hotel-name">Hotel Leopold<p>
+          <p class="section-homes__hotel-location">Saint Petersburg, Russia</p>
+        </div>
 
-        <figure class="guests-item__first">
-          <img src="images/hotel.jpg" alt="hotel" class="hotel__img"/>
-          <p class="caption">Hotel Leopold<p>
-          <p class="picture-description">Saint Petersburg, Russia</p>
-        </figure>
+        <div class="guests-item__second">
+          <img src="images/apartment.jpg" alt="apartment sunshine spain" class="section-homes__items__img"/>
+          <p class="section-homes__hotel-name">Apartment Sunshine </p>
+          <p class="section-homes__hotel-location">Santa Cruz de Tenerife, Spain</p>
+        </div>
 
+        <div class="guests-item__third">
+          <img src="images/villa.jpg" alt="villa kunerad slowakia" class="section-homes__items__img"/>
+          <p class="section-homes__hotel-name">Villa Kunerad</p>
+          <p class="section-homes__hotel-location">Vysokie Tatry, Slowakia</p>
+        </div>
 
-        <figure class="guests-item__second">
-          <img src="images/apartment.jpg" alt="apartment" class="apartment__img"/>
-          <p class="caption">Apartment Sunshine </p>
-          <p class="picture-description">Santa Cruz de Tenerife, Spain</p>
-        </figure>
+        <div class="guests-item__forth">
+          <img src="images/hostel.jpg" alt="hostel friendship germany" class="section-homes__items__img"/>
+          <p class="section-homes__hotel-name">Hostel Friendship</p>
+          <p class="section-homes__hotel-location">Berlin, Germany</p>
+        </div>
+      </div>
 
-
-        <figure class="guests-item__third">
-          <img src="images/villa.jpg" alt="villa" class="villa__img"/>
-          <p class="caption">Villa Kunerad</p>
-          <p class="picture-description">Vysokie Tatry, Slowakia</p>
-        </figure>
-
-
-
-        <figure class="guests-item__forth">
-          <img src="images/hostel.jpg" alt="hostel" class="hostel__img"/>
-          <p class="caption">Hostel Friendship</p>
-          <p class="picture-description">Berlin, Germany</p>
-        </figure>
-
-        <figure class="circle">
-          <svg class="arrow__svg">
-            <use href="#arrow" ></use>
-          </svg>
-        </figure>
-      </section>
+      <button class="circle section-homes__circle-position" aria-label="arrow scroll right">
+        <svg class="arrow__svg">
+          <use href="#arrow" ></use>
+        </svg>
+      </button>
     </div>
-  </div>
-
+  </section>
 
   <div class="wrapper">
     <section class="section-destinations">
+
       <header class="section-destinations__title-block">
-        <h3 class="section-destinations__title--text">The best destinations</h3>
+        <h3 class="section-destinations__title">The best destinations</h3>
       </header>
 
-      <section class=" col-6-sm section-destinations__buttons">
+      <div class=" col-6-sm section-destinations__buttons">
+        <button class="section-destinations__button-regions">Regions</button>
+        <button class="section-destinations__button-cities">Cities</button>
+        <button class="section-destinations__button-places">Places <span class="hidden-button">of interest</span></button>
+      </div>
 
-        <button class="section-destinations__button-regions"><a class="link _color-blue" href="#">Regions</a></button>
+      <div class="section-destinations__items">
+        <div class="section-destinations-items__first">
+          <img src="images/maldives.jpg" alt="maldives blue water and palm trees" class="section-destinations__img"/>
+          <p class="section-destinations-items__figcaption">Maldives</p>
+          <button class="section-destinations-items__submit">Book now</button>
+        </div>
 
-        <button class="section-destinations__button-cities"><a class="link" href="#">Cities</a></button>
-        <button class="section-destinations__button-places"><a class="link" href="#">Places <span class="hidden-button">of interest</span></a></button>
-      </section>
-
-      <section class="section-destinations__items">
-        <figure class="section-destinations-items__first">
-          <img src="images/maldives.jpg" alt="maldives" class="img"/>
-          <p class="figcaption">Maldives<p>
-        </figure>
-
-
-        <figure class="section-destinations-items__second">
-          <img src="images/spain.jpg" alt="spain" class="img"/>
-          <p class="figcaption">Spain<p>
-        </figure>
-
-
-        <figure class="section-destinations-items__third">
-          <img src="images/norway.jpg" alt="norway" class="img"/>
-          <p class="figcaption">Norway<p>
-        </figure>
+        <div class="section-destinations-items__second">
+          <img src="images/spain.jpg" alt="spain coast and yachts" class="section-destinations__img"/>
+          <p class="section-destinations-items__figcaption">Spain</p>
+          <button class="section-destinations-items__submit">Book now</button>
+        </div>
 
 
-        <figure class="section-destinations-items__forth">
-          <img src="images/island.jpg" alt="island" class="img"/>
-          <p class="figcaption">Island<p>
-        </figure>
+        <div class="section-destinations-items__third">
+          <img src="images/norway.jpg" alt="norway houses in the mountains" class="section-destinations__img"/>
+          <p class="section-destinations-items__figcaption">Norway</p>
+        </div>
 
-        <figure class="section-destinations__items--circle">
+
+        <div class="section-destinations-items__forth">
+          <img src="images/island.jpg" alt="island landscape volcanic coast" class="section-destinations__img"/>
+          <p class="section-destinations-items__figcaption">Island</p>
+        </div>
+
+        <button class="circle section-destinations__circle-position" aria-label="arrow show more">
           <svg class="section-destinations__items--arrow">
             <use href="#arrow" ></use>
           </svg>
-        </figure>
+        </button>
+
         <button class="section-destinations-items__submit">Book now</button>
-      </section>
+      </div>
 
     </section>
   </div>
 
-
   <div class="wrapper">
     <section class="section-sign-up">
 
-      <section class="section-sign-up__items">
+      <div class="section-sign-up__items">
+
+        <p class="col-5-lg section-sign-up__text">Sign up and get 20% &#10off your first booking</p>
+
+        <div class="section-sign-up__user-img" aria-label="sign in">
+          <svg class="user__svg">
+            <use href="#user" ></use>
+          </svg>
+        </div>
+
+        <button class="section-sign-up__close" aria-label="close button">
+          <svg class="close__svg">
+            <use href="#cross" ></use>
+        </button>
+
+        <div class="section-sign-up__logo--hidden">
+          <svg class="logo-hidden__svg">
+            <use href="#logo-sign-up" ></use>
+        </div>
+
+        <div class="section-sign-up__install--mobile">
+          <a class="instal-link" href="#">Install</a>
+        </div>
+
+        <button class="section-sign-up__submit">Sign up</button>
+      </div>
+
+    </section>
+  </div>
+
+  <div class="wrapper section-reviews__bg__sm">
+    <section class="section-reviews">
+      <header class="section__reviews__title">
+        <h3 class="reviews__title">Guests reviews</h3>
+      </header>
+
+      <div class="review__galery">
+
+        <div class="review__galery__img _first-img__block">
+          <img src="images/bali.jpg" alt="bali willa with swimming pool" class="review__img"/>
+          <div class="price__bali">
+            <p class="text-on-picture">From 250 USD</p>
+          </div>
+        </div>
+
+        <div class="review__galery__img _second-img__block">
+          <img src="images/rotterdam.jpg" alt="rotterdam hostel room" class="review__img"/>
+          <div class="price__rotterdam">
+            <p class="text-on-picture">From 40 USD</p>
+          </div>
+        </div>
+
+        <div class="review__galery__img _third-img__block">
+          <img src="images/ourica.jpg" alt="ourica hotel lobby" class="review__img"/>
+          <div class="price__ourica">
+            <p class="text-on-picture">From 100 USD</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="circle reviews__circle" aria-label="arrow scroll right">
+        <svg class="arrow__svg">
+          <use href="#arrow" ></use>
+        </svg>
+      </button>
+
+      <div class="reviews-bottom__container">
+        <div class="reviews-bottom">
+          <div class="reviews-bottom__block">
+            <p class="reviews-bottom__title">Ubud Bali Resort&SPA</p>
+            <p class="reviews-bottom__title--description">Bali, Indonesia</p>
+            <p class="reviews-bottom__rating">9,4</p>
+            <p class="reviews-bottom__number-rev">1324 reviews</p>
+          </div>
+
+          <div class="reviews-bottom__user-account">
+            <div class="reviews-bottom__user-account--img">
+              <svg class="user__account-svg">
+                <use href="#user-acc" ></use>
+            </div>
+
+            <div>
+              <p class="reviews-bottom__user-account--name">Hanna Ivanova</p>
+              <p class="reviews-bottom__user-account--country">&#127482;&#127462; <span>Ukraine</span></p>
+            </div>
+          </div>
+
+          <div class="reviews-bottom__user-feedback">
+            <p class="user-feedback">
+              Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.
+            </p>
+          </div>
+          <div class=" col-1-sm reviews-bottom__nav">
+            <svg class="nav__svg">
+              <use href="#nav" ></use>
+          </div>
+        </div>
+
+        <div class="reviews-bottom _king-kong-hostel">
+          <div class="reviews-bottom__block ">
+            <p class="reviews-bottom__title">King Kong Hostel</p>
+            <p class="reviews-bottom__title--description">Rotterdam, Netherlands</p>
+            <p class="reviews-bottom__rating">8,9</p>
+            <p class="reviews-bottom__number-rev">2016 reviews</p>
+          </div>
+          <div class="reviews-bottom__user-account">
+            <div class="reviews-bottom__user-account--img">
+              <svg class="user__account-svg">
+                <use href="#user-acc" ></use>
+            </div>
+            <div>
+              <p class="reviews-bottom__user-account--name">Adam Smith</p>
+              <p class="reviews-bottom__user-account--country">&#127482;&#127480; <span>USA</span></p>
+            </div>
+          </div>
+
+          <div class="reviews-bottom__user-feedback _usa__feedback">
+            <p class="user-feedback">
+              I've been in this hostel for a month and here is the best hostel of all
+              Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent
+              Most importantly, those who work here are kind and good-natured.
+            </p>
+          </div>
+        </div>
+
+        <div class="reviews-bottom _rokoko-hotel">
+          <div class="reviews-bottom__block ">
+            <p class="reviews-bottom__title">Rokoko Hotel</p>
+            <p class="reviews-bottom__title--description">Ourika, Marocco</p>
+            <p class="reviews-bottom__rating">9,1</p>
+            <p class="reviews-bottom__number-rev">815 reviews</p>
+          </div>
+          <div class="reviews-bottom__user-account">
+            <div class="reviews-bottom__user-account--img">
+              <svg class="user__account-svg">
+                <use href="#user-acc" ></use>
+            </div>
+            <div>
+              <p class="reviews-bottom__user-account--name">Anika Messer</p>
+              <p class="reviews-bottom__user-account--country">&#127465;&#127466; <span>Germany</span></p>
+            </div>
+          </div>
+
+          <div class="reviews-bottom__user-feedback">
+            <p class="user-feedback">
+              Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this location during my next stay in Marocco.
+            </p>
+          </div>
+        </div>
+  </div>
+  </section>
+  </section>
+  </div>
+
+  <div class="wrapper">
+    <section class="sign-up-hidden">
+
+      <div class="section-sign-up__items">
 
         <p class="col-5-lg section-sign-up__text">Sign up and get 20% &#10off your first booking</p>
 
@@ -505,93 +658,80 @@
           </svg>
         </div>
 
-        <figure class="section-sign-up__close">
+        <button class="section-sign-up__close">
           <svg class="close__svg">
             <use href="#cross" ></use>
-        </figure>
+        </button>
 
-        <figure class="section-sign-up__logo--hidden">
+        <div class="section-sign-up__logo--hidden">
           <svg class="logo-hidden__svg">
             <use href="#logo-sign-up" ></use>
-        </figure>
+        </div>
 
         <div class="section-sign-up__install--mobile">
           <a class="instal-link" href="#">Install</a>
         </div>
 
         <button class="section-sign-up__submit">Sign up</button>
-      </section>
+      </div>
 
     </section>
   </div>
-
-
-
-
-<section class="footer">
+  
+  <footer class="footer footer__bg">
   <div class="wrapper">
   <svg class="logo-footer__hidden">
     <use href="#logo-footer" ></use>
   </svg>
 
-  <div class="footer-wrapper">
       <div class="footer-container">
       <div class="col-4-md col-1-sm">
           <div class="footer__column">
-            <header class="footer__column__subtitle">
+            <div class="footer__column__subtitle">
             <a href="#" class="footer__column__subtitle-links--hidden"><h3 class="footer__column__subtitle--text">About</h3></a>
-          </header>
-              <section class="footer__column__subtitle--desc">
+          </div>
+              <div class="footer__column__subtitle--desc">
                   <p>How Triphouse works</p>
                   <p>Careers</p>
                   <p>Privacy</p>
                   <p>Terms</p>
-              </section>
+              </div>
           </div>
      </div>
 
         <div class="col-6-md">
           <div class="footer__column">
-            <header class="footer__column__subtitle _property">
+            <div class="footer__column__subtitle _property">
               <a href="#" class="footer__column__subtitle-links--hidden"><h3 class="footer__column__subtitle--text">Property types</h3></a>
-            </header>
-              <section class="footer__column__subtitle--desc">
+            </div>
+              <div class="footer__column__subtitle--desc">
                   <p>Guest houses</p>
                   <p>Hotels</p>
                   <p>Apartments</p>
                   <p>Villas</p>
                   <p>Holiday homes</p>
                   <p>Hostels</p>
-              </section>
+              </div>
           </div>
         </div>
 
         <div class="col-4-md ">
           <div class="footer__column">
-            <header class="footer__column__subtitle">
+            <div class="footer__column__subtitle">
               <a href="#" class="footer__column__subtitle-links--hidden"><h3 class="footer__column__subtitle--text">Support</h3></a>
-            </header>
-              <section class="footer__column__subtitle--desc">
+            </div>
+              <div class="footer__column__subtitle--desc">
                   <p>Contact Customer Service</p>
                   <p>FAQ</p>
-              </section>
+              </div>
           </div>
         </div>
       </div>
   </div>
 
   <footer class="col-3-lg ">
-    <h2 class="footer__copyright-text"> &copy; 2022Triphouse, Inc. All rights reserved</h2>
+    <p class="footer__copyright-text"> &copy; 2022 Triphouse, Inc. All rights reserved</p>
   </footer>
-  </div>
-  </section>
-
-
-
-
-
-
-
-
+  </footer>
   </body>
 </html>
