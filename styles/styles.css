@@ -1176,6 +1176,9 @@ position: relative;
   }
 
   /* top-section*/
+  .top-section{
+    min-height: 0;
+  }
 
   .form-section {
     display: none;
@@ -1217,6 +1220,7 @@ position: relative;
   }
 
   .form__city__hidden--input {
+    min-width: 166px;
     border: none;
     font-size: 15px;
     font-weight: 500;
@@ -1891,6 +1895,7 @@ position: relative;
   }
 
   .form__city__hidden--input {
+    min-width: 166px;
     outline: none;
     border: none;
     font-size: 15px;
